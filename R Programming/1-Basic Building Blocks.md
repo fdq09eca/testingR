@@ -8,7 +8,7 @@ This is a note for learning R by using `swirl`
 | :----: | :-----------------: |
 |  `<-`  | assignment operator |
 
-## vector
+## vector, `c()`
 
 ```r
 r$> z <- c(1.1, 9, 3.14)
@@ -34,18 +34,18 @@ r$> c(1, 2, 3, 4) + c(0, 10)
 ```
 
 - If the vectors are of different lengths, R 'recycles' the shorter vector until it is the same length as the longer vector.
-- it is the reason why `z * 2` has been done to every element of `z`. therefore, technically, `z * c(2, 2, 2) == z * 2`
-
+- It is the reason why `z * 2` has been done to every element of `z`. therefore, technically, `z * c(2, 2, 2) == z * 2`
 
 ```r
 r$> c(1, 2, 3, 4) + c(0, 10, 0)                                
 ```
 
-- it will still apply the "recycle" rule but there will be warning. it usually should not happen.
+- It still applies the "recycle" rule but there will be warning[^warning].
+
+[^warning]: It should not happen, usually.
 
 ## arithmetic operator
 
 - `+-*/^`, `^` means power of. e.g. `2^3 = 8`
 - `sqrt(x)` is square root of `x`
 - `abs(x)` is the absolute value of `x`
-
